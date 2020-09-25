@@ -7,6 +7,9 @@ html, body{
 a, p, h1, h2, h3, h4, h5{
     color: #fff!important;
 }
+.row{
+    margin:0;
+}
 .backgroundColor{
     background-color: #424242;
 }
@@ -29,4 +32,12 @@ a, p, h1, h2, h3, h4, h5{
     font-size: 19px;
     margin-top: 15px;
     text-align: center;
+}
+.sobreAmong{
+    font-size: 18px;
+    text-align: center;
+}
+.divOque{
+    height: 100%;
+    width: auto;
 }

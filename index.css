@@ -2,7 +2,7 @@ html, body{
     height: 100%;
     width: auto;
     margin:0;
-    background-color: #303030;
+    background-color: #000;
 }
 a, p, h1, h2, h3, h4, h5{
     color: #fff!important;
@@ -35,15 +35,14 @@ a, p, h1, h2, h3, h4, h5{
 }
 .sobreAmong{
     font-size: 18px;
-    text-align: center;
+    font-family: 'Epilogue', sans-serif;
 }
 .divAlguemJogar{
     height: 110vh;
     width: auto;
-    background-image: url(./img/amongWallpaper.webp);
-    background-size: 100% 100%;
     position: relative;
 }
+
 .centralizarVertical{
     margin:0;
     position: absolute;
@@ -51,12 +50,20 @@ a, p, h1, h2, h3, h4, h5{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.divOque{
-    background-image: url(./img/amongWallpaper2.jpg);
-    background-size: 100% 100%;
+.wallpp2{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 .subDivOque{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 98vw;
     padding-bottom: 85px;
+}
+.divCompatibilidade{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #000;
 }

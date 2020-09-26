@@ -9,65 +9,144 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@531&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Navbar com walpaper -->
-    <nav class="navbar" style="position: absolute;">
+    <nav class="navbar" style="position: absolute; z-index: 2;">
         <img src="./img/icon.webp" class="navIcon d-inline-block align-top">
 
         <a class="navbar-brand navText" href="#">
             Among Us
         </a>
     </nav>
-    <div>
-        <img class="wallpaperPp" src="./img/wallpaper.jpg">
-    </div>
 
-    <!--Oque é?-->
-    <div class="divOque" style="height: 120vh; position: relative;">
-
-        <div class="container centralizarVertical subDivOque" style="margin-bottom: 85px;">
-
-            <img src="./img/1.png" height="20px" width="auto"
-                style="position: absolute;left: 50%; transform: translate(5px,70px);">
-            <h1 style="text-align: center; margin-top: 85px;">O que é Among Us?</h1>
-            <div class="row" style="margin-top: 50px; ">
-                <div style="position: absolute; left: -120px;">
-                    <img src="./img/laranja.png" height="150px" width="auto" ">
-                    <img src=" ./img/coroa.png" height="60px" width="auto"
-                        style="position: absolute; top:-50px;left: 0;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="max-height: 100vh;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 100vh;">
+                <img class="d-block w-100" src="./img/wallpaper.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Among US</h5>
+                    <p>Grátis na AppStore e PlayStore</p>
                 </div>
-
-                <div class="col-8" style="display: flex; align-items: center;">
-                    <p class="sobreAmong">Among Us é um jogo eletrônico casual multijogador desenvolvido e publicado
-                        pelo
-                        estúdio de jogos
-                        estadunidense e lançado em 15 de junho de 2018. O jogo se passa em um cenário de tema
-                        espacial, onde cada jogador desempenha um de dois papéis, sendo a maioria tripulantes e um
-                        número
-                        predeterminado sendo impostores. O objetivo dos tripulantes é identificar os Impostores,
-                        eliminá-los
-                        e completar tarefas ao redor do mapa, e o objetivo dos Impostores é matar os Tripulantes sem
-                        serem
-                        identificados.</p>
+            </div>
+            <div class="carousel-item" style="max-height: 100vh;">
+                <img class="d-block w-100" src="./img/steamBuy.png" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Disponível para PC</h5>
+                    <p>Disponível para compra pela Steam</p>
                 </div>
-                <div class="col-4">
-                    <img width="100%" height="auto" style="border-style: solid;"
-                        src="https://media1.tenor.com/images/c5b612df9ef285c67d38c17ddd9635b9/tenor.gif?itemid=17674950"
-                        alt="Among Us Funny GIF">
+            </div>
+            <div class="carousel-item" style="max-height: 100vh;">
+                <img class="d-block w-100" src="./img/amongWallpaper3.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cuidado!!</h5>
+                    <p>Há um impostor entre nós!!</p>
                 </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
+    <!--Oque é?-->
+    <div style="height: 120vh; position: relative;">
+        <img src="./img/amongWallpaper2.jpg" class="wallpp2">
 
+        <div class="centralizarVertical subDivOque" style="margin-bottom: 85px;">
+            <div class="container">
+                <img src="./img/1.png" height="20px" width="auto"
+                    style="position: absolute;left: 50%; transform: translate(5px,-5px);">
+                <h1 style="text-align: center; margin-top: 85px;">O que é Among Us?</h1>
+                <div class="row" style="margin-top: 50px; ">
+                    <div style="position: absolute; left: 50px;">
+                        <img src="./img/rosa.png" height="150px" width="auto" ">
+                    <img src=" ./img/coroa.png" height="60px" width="auto"
+                            style="position: absolute; top:-50px;left: 0;">
+                    </div>
+
+                    <div class="col-8" style="display: flex; align-items: center;">
+                        <p class="sobreAmong" style="text-indent:4ch ">Among Us é um jogo eletrônico casual multijogador desenvolvido e publicado
+                            pelo
+                            estúdio de jogos
+                            estadunidense e lançado em 15 de junho de 2018. O jogo se passa em um cenário de tema
+                            espacial, onde cada jogador desempenha um de dois papéis, sendo a maioria tripulantes e um
+                            número
+                            predeterminado sendo impostores. <br/> O objetivo dos tripulantes é identificar os Impostores,
+                            eliminá-los
+                            e completar tarefas ao redor do mapa, e o objetivo dos Impostores é matar os Tripulantes sem
+                            serem
+                            identificados.</p>
+                    </div>
+                    <div class="col-4">
+                        <img width="100%" height="auto" style="border-style: solid;"
+                            src="https://media1.tenor.com/images/c5b612df9ef285c67d38c17ddd9635b9/tenor.gif?itemid=17674950"
+                            alt="Among Us Funny GIF">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Trailer-->
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: auto;">
+        <div>
+            <h2 style="text-align: center; margin-bottom: 50px;">Trailer Oficial</h2>
+            <iframe width="962" height="541" src="https://www.youtube.com/embed/NSJ4cESNQfE?autoplay=1&mute=1"" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--Compatibilidade-->
+
+    <div class="divCompatibilidade container">
+        <h2 style="text-align: center; margin-top: 50px;">Plataformas Compatíveis</h2>
+        <div style="min-height: 40vh; display: flex;justify-content: center; align-items: center;">
+            <div>
+                <div style="float: left; background-color: #fff; padding: 40px; border-radius: 50%;">
+                    <img src="./img/iphone.png" height="60px">
+                </div>
+                <h2 style="text-align: center;margin-top: 15px;">MOBILE</h2>
+            </div>
+            <div style="margin-left: 40px;">
+                <div style="background-color: #fff; padding: 40px; border-radius: 50%;">
+                    <img src="./img/monitor.png" height="60px">
+                </div>
+                <h2 style="text-align: center;">PC</h2>
+            </div>
+        </div>
+        <div style="min-height: 25vh; display: flex;justify-content: center; align-items: center;">
+            <a href="https://apps.apple.com/us/app/among-us/id1351168404" target="_blank">
+                <img src="./img/appleStoreIcon.png" height="115px">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=pt_BR" target="_blank">
+                <img src="./img/playStoreIcon.png" height="100px">
+            </a>
+            <a href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank">
+                <img src="./img/steamIcon.png" height="100px" style="margin-left:10px;">
+            </a>
+        </div>
+    </div>
 
     <!--Discord para jogar-->
 
     <div class="divAlguemJogar">
+        <img src="./img/amongWallpaper.webp" style="height: 100%;width: 100%;object-fit: cover;">
         <div class="container centralizarVertical">
-            <h1 style="text-align: center;">E ai? Não tem com quem jogar?</h1>
+            <h2 style="text-align: center;">E ai? Não tem com quem jogar?</h2>
             <p class="txtDiscord ">Caso você não tenha com quem jogar, tanto por falta de amigos com o jogo ou então por
                 eles
                 não estarem online. Fique a vontade para entrar em nosso servidor no discord, com disponibilidade de
@@ -85,6 +164,7 @@
         </div>
 
     </div>
+
 
 
 

@@ -1,74 +1,159 @@
-html, body{
+html, body {
     height: 100%;
     width: auto;
-    margin:0;
+    margin: 0;
     background-color: #000;
 }
-a, p, h1, h2, h3, h4, h5{
+
+a, p, h1, h2, h3, h4, h5 {
     color: #fff!important;
 }
-.row{
-    margin:0;
+
+.row {
+    margin: 0;
 }
-.backgroundColor{
+
+.navbarResponsive {
+    position: absolute;
+    z-index: 2;
+}
+
+.backgroundColor {
     background-color: #424242;
 }
-.wallpaperPp{
+
+.imgCarousel {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.wallpaperPp {
     object-fit: cover;
     width: 100%;
     height: 100vh;
 }
-.navIcon{
+
+.navIcon {
     margin-left: 100px;
     width: 70px;
     height: auto;
 }
-.navText{
+
+.navText {
     margin-left: 50px;
     font-size: 30px;
     font-family: 'Secular One', sans-serif;
+    top: 50%;
+    transform: translate(0, -50%);
 }
-.txtDiscord{
+
+.txtDiscord {
     font-size: 19px;
     margin-top: 15px;
     text-align: center;
 }
-.sobreAmong{
+
+.sobreAmong {
     font-size: 18px;
     font-family: 'Epilogue', sans-serif;
 }
-.divAlguemJogar{
+
+.divAlguemJogar {
     height: 110vh;
     width: auto;
     position: relative;
 }
 
-.centralizarVertical{
-    margin:0;
+.centralizarVertical {
+    margin: 0;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.wallpp2{
+
+.wallpp2 {
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
 }
-.subDivOque{
-    background-color: rgba(0, 0, 0, 0.7);
+
+.subDivOque {
+    background-color: rgba(0, 0, 0, 0.5);
     height: auto;
+    max-height: 100%;
     width: 98vw;
     padding-bottom: 85px;
 }
-.divCompatibilidade{
+
+.divCompatibilidade {
     width: 100%;
     min-height: 60vh;
     background-color: #000;
 }
-.forterCss{
+
+.forterCss {
     background-color: #202020;
     width: 100%;
     height: 20vh;
+}
+
+.trailerVid {
+    display: block;
+    width: 50%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.personRosa{
+    position: absolute;
+    left:50px;
+}
+
+@media screen and (max-width: 900px) {
+    .trailerVid {
+        width: 100%;
+    }
+    .navText {
+        top: 0;
+        transform: translate(0, 0);
+    }
+    .navIcon {
+        display: block!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .imgLocalDownload {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .personRosa{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbarResponsive {
+        height: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .navIcon {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .personRosa{
+        display: none;
+    }
+}
+@media screen and (max-width: 1400px){
+    .personRosa{
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -100px;
+    }
 }

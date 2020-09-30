@@ -44,8 +44,9 @@ a, p, h1, h2, h3, h4, h5 {
     margin-left: 50px;
     font-size: 30px;
     font-family: 'Secular One', sans-serif;
+    position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%)
 }
 
 .txtDiscord {
@@ -117,6 +118,7 @@ a, p, h1, h2, h3, h4, h5 {
         width: 100%;
     }
     .navText {
+        position: relative;
         top: 0;
         transform: translate(0, 0);
     }
